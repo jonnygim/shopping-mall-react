@@ -1,13 +1,14 @@
 import React, {useState} from 'React'
 import Header from './components/Layout/Header'
 import Main from './components/Layout/Main'
+import Products from './components/Products/Products'
 
 function App() {
   return (
     <>
       <Header/>
       <Main>
-        <Card/>
+        <Products/>
       </Main>
     </>
   );
