@@ -12,11 +12,15 @@ const App = () => {
   const openCartHandler = () => {
     setCartIsShown(true);
   }
+
+  const closeCartHandler = () => {
+    setCartIsShown(false);
+  };
   
 
   return (
     <>
-      {cartIsShown && <Cart />}
+      {cartIsShown && <Cart onClose={closeCartHandler}/>}
       <Header onOpen={openCartHandler}/>
       <Banner />
       <Main>
