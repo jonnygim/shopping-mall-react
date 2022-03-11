@@ -1,17 +1,20 @@
-import React, {useState} from 'React'
+import React, {useState} from 'react'
 import Header from './components/Layout/Header'
 import Main from './components/Layout/Main'
 import Products from './components/Products/Products'
 
-function App() {
+const App = () => {
+
+  
+
   return (
     <>
-      <Header/>
+      <Header />
       <Main>
-        <Products/>
+        <Products />
       </Main>
     </>
-  );
+  )
 }
 
 export default App;
