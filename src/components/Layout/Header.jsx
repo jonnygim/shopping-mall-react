@@ -7,7 +7,7 @@ const Header = (props) => {
     <>
         <header className={classes.header}>
             <h1>Shop</h1>
-            <HeaderCart />
+            <HeaderCart onOpen={props.onOpen}/>
         </header>
     </>
   )

@@ -6,7 +6,11 @@ import './App.css'
 
 
 const App = () => {
+  const [cartIsShown, setCartIsShown] = useState(false);
 
+  const openCartHandler = () => {
+    setCartIsShown(true);
+  }
   
 
   return (
