@@ -1,4 +1,4 @@
-import React, {useState} from 'React'
+import React, {useState} from 'react'
 import Header from './components/Layout/Header'
 import Main from './components/Layout/Main'
 import Products from './components/Products/Products'
