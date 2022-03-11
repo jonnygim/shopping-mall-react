@@ -4,12 +4,16 @@ import Main from './components/Layout/Main'
 import Products from './components/Products/Products'
 
 const App = () => {
+  const [cartIsShown, setCartIsShown] = useState(false);
 
+  const openCartHandler = () => {
+    setCartIsShown(true);
+  }
   
 
   return (
     <>
-      <Header />
+      <Header onOpen={openCartHandler}/>
       <Main>
         <Products />
       </Main>
