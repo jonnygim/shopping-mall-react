@@ -1,8 +1,8 @@
 .button {
     cursor: pointer;
     border: none;
-    background-color: #333;
-    color: white;
+    background-color: #f7f7f7;
+    color: #5F0080;
     margin: 1rem;
     display: flex;
     justify-content: space-around;
@@ -11,7 +11,7 @@
 }
 
 .button:hover {
-    background-color: black;
+    background-color: rgba(255, 255, 255, 0.377);
 }
 
 .icon {

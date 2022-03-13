@@ -9,15 +9,13 @@ const Header = (props) => {
     <>
         <header className={classes.header}>
             <div className={classes.headerMain}>
-              <div className={classes.headerMenu}>
                 <h2>E-Commerce</h2>
                 <Search />
-              </div>
-              <div className={classes.headerUser}>
+                <div className={classes.headerMenu}>
                 <Login onOpen={props.onOpen}/>
                 <HeaderCart onOpen={props.onOpen}/>
+                </div>
               </div>
-            </div>
         </header>
     </>
   )

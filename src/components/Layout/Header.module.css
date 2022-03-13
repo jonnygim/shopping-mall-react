@@ -1,17 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 .header {
     padding: 0 10%;
-    background-color: #333;
+    background-color: #f7f7f7;
     color: #333;
     display: flex;
-    color: white;
+    color: #5F0080;
+    font-family: 'Lobster', cursive;
 }
 
 .headerMain {
+    width:100%;
     display: flex;
-
+    justify-content: space-between;
 }
 
 .headerMenu {
+    width:10%;
     display: flex;
     
 }

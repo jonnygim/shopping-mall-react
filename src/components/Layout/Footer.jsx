@@ -3,9 +3,9 @@ import classes from './Footer.module.css';
 const Footer =()=>{
         return (
             <div className={classes.footer}>
-              <p className={classes.footerCorp}>
-                  &copy; 2022 Copyright: Playdata
-              </p>
+              <h4 className={classes.footerCorp}>
+                  &copy; E-COMMERCE CORP. ALL RIGHTS RESERVED
+              </h4>
             </div>
         )
 }
