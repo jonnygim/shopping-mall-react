@@ -20,6 +20,7 @@ const Product = (props) => {
   return (
     <li className={classes.product}>
       <div className={classes.product__info}>
+        <img id="myimg" />
         <h3>{props.name}</h3>
         <div className={classes.price}>{props.price}</div>
         <div>{props.charge}</div>
