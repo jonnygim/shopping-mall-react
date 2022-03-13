@@ -9,6 +9,7 @@ import Carousel from './components/Layout/Carousel'
 import Footer from './components/Layout/Footer'
 import Login from './components/Login/Login'
 
+
 const App = () => {
   const [cartIsShown, setCartIsShown] = useState(false);
   const [loginIsShown, setLoginIsShown] = useState(false);

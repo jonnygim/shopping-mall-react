@@ -1,13 +1,15 @@
 .product {
     display: flex;
-    justify-content: center;
-    margin: 1rem;
-    width: 150px;
+    justify-content: start;
+    margin: 1.5rem;
+    width: 300px;
     border-bottom: 1px solid #ccc;
+    /* border: dashed 2px forestgreen; */
 }
 
+/* 상품 명 */
 .product__info {
-    width: 100%;
+    width: 55%;
 }
 
 .product h3 {
@@ -27,4 +29,10 @@
     font-weight: bold;
     color: #4a69bd;
     font-size: 1.25rem;
+}
+
+li {
+    display: flex;
+    align-items: end;
+    
 }

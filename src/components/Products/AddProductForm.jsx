@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react'
 import _uniqueId from 'lodash/uniqueId'
 import Input from '../Commons/Input'
 import Button from '../Commons/Button'
-
+import classes from './AddProductForm.module.css'
 
 const AddProductForm = (props) => {
   const [id] = useState(_uniqueId('prefix-'));
@@ -19,7 +19,7 @@ const AddProductForm = (props) => {
   };
 
   return (
-    <form>
+    <form className={classes.btn}>
       <Input ref={inputRef} label={'amount'} input={ {id: id, type: 'number', defaultValue: '1'}}/>
       <Button type="submit" onClick={submitHandler}>담기</Button>
     </form>
