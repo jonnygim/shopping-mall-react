@@ -11,6 +11,9 @@ const CartItem = (props) => {
             <span className={classes.price}>{price}</span>    
             <span className={classes.amount}>수량:{props.amount}</span>
           </div>
+          <div>
+            배송비:{props.charge}
+          </div>
       </li>
   ) 
 }
