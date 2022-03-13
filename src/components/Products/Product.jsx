@@ -8,9 +8,7 @@ const Product = (props) => {
 
   const addItemToCartHandler = (amount) => {
     console.log(amount);
-
- 
-    console.log(props.image);
+    
     const product = {
       id: props.id,
       name: props.name,
@@ -37,7 +35,6 @@ const Product = (props) => {
   } else if (props.image === 'product6') {
     imageUrl = require('../images/product6.jpg');
   }
-// console.log(imageUrl);
 
   return (
     <li className={classes.product}>
