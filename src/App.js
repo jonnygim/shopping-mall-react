@@ -7,9 +7,11 @@ import Cart from './components/Cart/Cart'
 import CartProvider from './store/CartProvider'
 import Carousel from './components/Layout/Carousel'
 import Footer from './components/Layout/Footer'
+import Login from './components/Login/Login'
 
 const App = () => {
   const [cartIsShown, setCartIsShown] = useState(false);
+  const [loginIsShown, setLoginIsShown] = useState(false);
 
   const openCartHandler = () => {
     setCartIsShown(true);
@@ -18,13 +20,22 @@ const App = () => {
   const closeCartHandler = () => {
     setCartIsShown(false);
   };
+
+  const openLoginHandler = () => {
+    setLoginIsShown(true);
+  }
+
+  const closeLoginHandler = () => {
+    setLoginIsShown(false);
+  };
   
 
   return (
 
       <CartProvider>
       {cartIsShown && <Cart onClose={closeCartHandler}/>}
-      <Header onOpen={openCartHandler}/>
+      {loginIsShown && <Login onClose={closeLoginHandler}/>}
+      <Header onOpen={openCartHandler} onLogin={openLoginHandler}/>
       <Carousel />
       <Main>
         <Products />

@@ -7,11 +7,14 @@ const Product = (props) => {
   const cartContext = useContext(CartContext);
 
   const addItemToCartHandler = (amount) => {
+    console.log(amount);
+
     const product = {
       id: props.id,
       name: props.name,
       amount: amount,
       price: props.price,
+      charge: props.charge
     }
 
     cartContext.addItem(product);

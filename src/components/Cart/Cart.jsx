@@ -18,6 +18,7 @@ const Cart = (props) => {
                 name={product.name}
                 price={product.price}
                 amount={product.amount}
+                charge={product.charge}
                 />
             ))}
         </ul>
