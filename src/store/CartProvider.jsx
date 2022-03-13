@@ -5,6 +5,7 @@ const CartProvider = (props) => {
     const [cartState, setCartState] = useState({
         items: [],
         totalAmount: 0,
+        charge: 0,
     });
 
     // cart에 product 데이터를 추가하는 메서드
@@ -29,7 +30,7 @@ const CartProvider = (props) => {
         } else { // 새로 등록한 product(item)이 cart에 존재하지 않을때
             updatedItems = cartState.items.concat(item);
         }
-        const updatedTotalAmount = cartState.tatalAmount + item.price * item.amount;
+        const updatedTotalAmount = cartState.totalAmount + item.price * item.amount;
         setCartState({items: updatedItems, totalAmount: updatedTotalAmount});
     };
 
