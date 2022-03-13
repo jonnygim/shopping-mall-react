@@ -1,0 +1,21 @@
+.button {
+    cursor: pointer;
+    border: none;
+    background-color: #333;
+    color: white;
+    margin: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: black;
+}
+
+.icon {
+    width: 1.35rem;
+    height: 1.35rem;
+    margin-right: 0.5rem;
+}
