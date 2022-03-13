@@ -1,13 +1,17 @@
+/* 카드 전체 */
 .products {
-    width: 90%;
+    width:70%;
     margin: 2rem auto;
+    
 }
 
 .products ul {
     display: flex;
     flex-wrap: wrap;
-
+    align-items: center;
+    justify-content: center;
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 10px;
+    margin-left: 20px;
 }
