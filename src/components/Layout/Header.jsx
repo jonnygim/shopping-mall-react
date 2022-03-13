@@ -2,7 +2,7 @@ import React from 'react'
 import classes from './Header.module.css'
 import Search from './Search'
 import HeaderCart from './HeaderCart'
-import Login from './Login'
+import HeaderLogin from './HeaderLogin'
 
 const Header = (props) => {
   return (
@@ -12,7 +12,7 @@ const Header = (props) => {
                 <h2>E-Commerce</h2>
                 <Search />
                 <div className={classes.headerMenu}>
-                <Login onOpen={props.onOpen}/>
+                <HeaderLogin onOpen={props.onLogin}/>
                 <HeaderCart onOpen={props.onOpen}/>
                 </div>
               </div>
