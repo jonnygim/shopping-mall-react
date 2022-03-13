@@ -4,6 +4,7 @@ import Main from './components/Layout/Main'
 import Products from './components/Products/Products'
 import Cart from './components/Cart/Cart'
 import './App.css'
+import CartProvider from './store/CartProvider'
 
 
 const App = () => {
@@ -19,14 +20,16 @@ const App = () => {
   
 
   return (
-    <>
+    
+      <CartProvider>
       {cartIsShown && <Cart onClose={closeCartHandler}/>}
       <Header onOpen={openCartHandler}/>
       <Banner />
       <Main>
         <Products />
       </Main>
-    </>
+      </CartProvider>
+    
   )
 }
 
