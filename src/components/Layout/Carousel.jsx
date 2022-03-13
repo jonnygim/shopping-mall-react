@@ -5,17 +5,11 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 const Container = styled.div`
-  overflow:hidden;
 `;
 
 const StyledSlider = styled(Slider)`
     .slick-slide div{
       outline: none;
-    }
-
-    .slick-dots {
-        bottom: -50px;
-        margin-top: 200px;
     }
 `;
 
@@ -32,25 +26,21 @@ const Image = styled.img`
 const imgUrl1 = require('../images/tech.jpg');
 const imgUrl2 = require('../images/food.jpg');
 
-const items = [
-  { id: 1, url: imgUrl1 },
-  { id: 2, url: imgUrl2 },
-];
 
 
-export default class SimpleSlider extends Component {
-  render() {
+const SimpleSlider=()=> {
     const settings = {
       dots: true,
       infinite: true,
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
-      arrows: false,
-    //   centerMode: true,
-    //   centerPadding: '0px',
+      arrows: true,
     };
-
+    const items = [
+      { id: 1, url: imgUrl1 },
+      { id: 2, url: imgUrl2 },
+    ];
 
     return (
         <div>
@@ -70,5 +60,6 @@ export default class SimpleSlider extends Component {
             </Container>
         </div>
     );
-  }
 }
+
+export default SimpleSlider;
