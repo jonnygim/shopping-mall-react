@@ -23,7 +23,7 @@ const Cart = (props) => {
             ))}
         </ul>
     );
-
+    console.log(props);
     const totalAmount = `$${cartContext.totalAmount}`;
 
     const cartItemsTotal = (
@@ -43,7 +43,7 @@ const Cart = (props) => {
     const cartModalContent = (
         <>
             {/* 카트 목록(cartItmes) */}
-            {cartItems }
+            {cartItems}
             {/* 카트 목록 총 합(cartItemsTotal) */}
             {cartItemsTotal}
             {/* 닫기, 주문 버튼(modalButton) */}
