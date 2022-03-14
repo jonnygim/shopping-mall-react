@@ -22,9 +22,11 @@
 ![2](https://user-images.githubusercontent.com/97021735/158087318-789fe59b-32d8-4493-8389-5d0daebdafe6.PNG)
 
 2. 장바구니
+![3](https://user-images.githubusercontent.com/97021735/158088039-3c11efc6-3c47-4199-aaca-c81243e2c0d9.PNG)
 
 ---
 ### 개선할 점
 1. 로그인 페이지 및 검색 기능 구현
 2. 이미지를 서버에서 가져오는 것으로 개선
+3. 콤마(,)를 이용하여 금액 단위 구분
 
