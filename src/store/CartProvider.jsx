@@ -7,6 +7,7 @@ const CartProvider = (props) => {
         totalAmount: 0,
         charge: 0,
     });
+    const [chargeState, setChargeState] = useState(0);
 
     // cart에 product 데이터를 추가하는 메서드
     const addItemToCartHandler = (item) => {
@@ -30,13 +31,22 @@ const CartProvider = (props) => {
         } else { // 새로 등록한 product(item)이 cart에 존재하지 않을때
             updatedItems = cartState.items.concat(item);
         }
+        
+        if(Number.isInteger(item.charge)) {
+            setChargeState(item.charge);
+        } else {
+            const charge = 2500;
+            setChargeState(charge);
+        }
+        // console.log(item.charge);
         const updatedTotalAmount = cartState.totalAmount + item.price * item.amount;
         setCartState({items: updatedItems, totalAmount: updatedTotalAmount});
     };
+    console.log(chargeState);
 
     const cartContext = {
         items: cartState.items,
-        totalAmount: cartState.totalAmount,
+        totalAmount: cartState.totalAmount + chargeState,
         addItem: addItemToCartHandler,
     };
 
